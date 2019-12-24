@@ -52,7 +52,7 @@ $getlista = explode("\n", file_get_contents("data/lista.txt"));
 $getban = explode("\n", file_get_contents('data/ban.txt'));
 $getmes_id = explode("\n", file_get_contents("ms/$message_id.txt"));
 //●●●●●●●●●●●●●●●●●●●●●●●●
-$sudo = array("479103620","323823995");
+$sudo = array("157138450","323823995");
 if(in_array($from_id, $sudo)){
 $back = json_encode(['inline_keyboard'=>[[['text'=>"↩️ - رجوع - ↪️",'callback_data'=>"left"]],]]);
 if($data == "left"){
